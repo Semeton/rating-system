@@ -5,7 +5,7 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link href='./assets/jquery-bar-rating/dist/themes/fontawesome-stars.css' rel='stylesheet' type='text/css'>
+    <link href='./assets/jquery-bar-rating-master/dist/themes/fontawesome-stars.css' rel='stylesheet' type='text/css'>
     <!-- <link href="./styles.css" type="text/css" rel="stylesheet" /> -->
 </head>
 
@@ -15,7 +15,7 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./assets/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+<script src="./assets/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script>
 <!-- Invoke star rating -->
 <script type='text/javascript'>
 $(document).ready(function() {

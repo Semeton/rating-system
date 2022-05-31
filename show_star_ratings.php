@@ -1,5 +1,5 @@
 <?php
-    $user_id = 1;
+    $user_id = 2;
     $query = "SELECT * FROM products";
     $result = mysqli_query($connection, $query);
     

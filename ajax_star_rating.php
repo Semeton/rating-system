@@ -1,6 +1,6 @@
 <?php
 include "./database/db.php";
-$user_id = 1;
+$user_id = 2;
 $product_id = $_REQUEST['product_id'];
 $rating = $_REQUEST['rating'];
 // Check rating inside the table
@@ -8,9 +8,12 @@ $query = "SELECT COUNT(*) AS countProduct FROM product_rating WHERE product_id =
 $result = mysqli_query($connection, $query);
 $getdata = mysqli_fetch_array($result);
 $count = $getdata['countProduct'];
+// var_dump($count); die();
 if($count == 0){
  $insertquery = "INSERT INTO product_rating(user_id, product_id, rating) values(". $user_id .", ". $product_id .", ". $rating .")";
+//  echo $insertquery; die();
  mysqli_query($connection, $insertquery);
+ echo $insertquery;
 }else {
  $updateRating = "UPDATE product_rating SET rating=" . $rating . " where user_id=" . $user_id . " and product_id=" . $product_id;
  mysqli_query($connection, $updateRating);
